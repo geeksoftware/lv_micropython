@@ -28,6 +28,8 @@ by firmware programming).
 """
         )
         time.sleep(3)
+        # eggfly mod
+        return
 
 
 def setup():

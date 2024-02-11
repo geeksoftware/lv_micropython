@@ -63,6 +63,11 @@ separate_arguments(LV_CFLAGS_ENV UNIX_COMMAND $ENV{LV_CFLAGS})
 list(APPEND LV_CFLAGS ${LV_CFLAGS_ENV})
 idf_build_set_property(COMPILE_DEFINITIONS "${LV_CFLAGS}" APPEND)
 
+# -DLV_USE_SYSMON=1 -DLV_USE_PERF_MONITOR=1
+idf_build_set_property(COMPILE_DEFINITIONS "-DLV_USE_SYSMON=1" APPEND)
+idf_build_set_property(COMPILE_DEFINITIONS "-DLV_USE_PERF_MONITOR=1" APPEND)
+
+
 # Define the project.
 project(micropython)
 

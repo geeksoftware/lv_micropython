@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
+IDF_PATH=$HOME/esp-idf-v4.4
+
+
 function do_work() {
+    . ${IDF_PATH}/export.sh
     cd ports/esp32
     SERIAL_PORT=`ls /dev/cu.usbmodem* 2>/dev/null`
     if [[ -z "$SERIAL_PORT" ]]; then
