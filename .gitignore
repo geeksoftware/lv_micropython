@@ -67,3 +67,5 @@ ports/javascript/node_modules
 
 # MacOS desktop metadata files
 .DS_Store
+dependencies.lock
+
